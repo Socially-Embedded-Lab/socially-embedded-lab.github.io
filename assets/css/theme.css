@@ -1,0 +1,337 @@
+body {
+    position: relative;
+    font-family: 'Lato', arial, sans-serif;
+    color: #444;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #155263;
+}
+
+a {
+    color: #155263;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.btn,
+a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat', arial, sans-serif;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.container-fluid h1, .container h1 {
+    text-align: center;
+}
+
+#home {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    /*height: 800px;*/
+    /*color: #1E88E5;*/
+    background-color: #fff;
+}
+
+.logo {
+/*    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;*/
+    padding-bottom: 2rem;
+}
+
+/*@media (max-width: 767px) {
+    .logo {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+*/
+#mission>div>div {
+    /*padding-top: 50px;
+    height: 500px;
+    color: #fff;*/
+    background-color: #FF6F3C;
+}
+
+#news>div>div {
+/*    padding-top: 50px;
+    height: 500px;
+    color: #fff;
+    background-color: #ff9800;*/
+    /*background-color: #FFC93C;*/
+}
+
+ul.timeline {
+  list-style-type: none;
+}
+
+.timeline > li {
+  position: relative;
+  margin: 0;
+  padding-bottom: 1em;
+  padding-left: 2rem;
+}
+
+.timeline > li:before {
+  content: '';
+  background-color: #155263;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 6px;
+  width: 8px;
+}
+
+.timeline > li:after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23155263' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+  position: absolute;
+  left: -6px;
+  top: 2px;
+  height: 32px;
+  width: 32px;
+}
+
+/* Start the line further down on the first list item */
+.timeline > li:first-child:before { top: 12px;  }
+
+/* Stop the line short on the final list item */
+/*.timeline > li:last-child:before { height: 12px; }*/
+
+ul.dash-bullets {
+    position: relative;
+    list-style: none;
+    margin-left: 1rem;
+    padding-left: 1.2rem;
+}
+
+ul.dash-bullets > li:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+#people>div>div {
+    /*padding-top: 50px;
+    height: 500px;
+    color: #fff;
+    background-color: #00bcd4;*/
+    border-color: #155263 !important;
+}
+
+#people .card > img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+#people .cardlinks > a {
+    font-size: 20px;
+    margin: 0.25rem;
+}
+
+
+#projects>div>div {
+    /*padding-top: 50px;
+    height: 500px;
+    color: #fff;*/
+    background-color: #FFC93C;
+}
+
+#projects .card {
+    border-color: #155263;
+}
+
+#projects .card > img {
+    /*border-radius: 50%;*/
+    height: 125px;
+    /*display: none;*/
+}
+
+#publications {
+    /*padding-top: 50px;
+    height: 500px;
+    color: #fff;
+    background-color: #009688;*/
+}
+
+#publications a:link, #publications a:active, #publications a:visited, #publications a:hover {  
+    border-bottom: 1px dotted;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+#contact {
+/*    padding-top: 50px;
+    height: 500px;
+    color: #fff;*/
+    height: 500px;
+    background-color: #009688;
+}
+
+#footer {
+/*    padding-top: 50px;
+    height: 500px;*/
+    color: #ffffff99;
+    background-color: #26282c;
+}
+
+#footer a {
+    color: #ffffffBB;
+}
+
+/* ======= Header ======= */
+.header {
+    /*padding: 10px 0;*/
+    background: #17baef;
+    color: #fff;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+.navbar-brand>img {
+    height: 3.125rem;
+}
+
+#header {
+    background-color: #fff;
+}
+
+#header.navbar-fixed-top {
+    background-color: #155263;
+    z-index: 9999;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.header.navbar-fixed-top .logo a {
+    color: #17baef;
+}
+
+.header .logo {
+    margin: 0;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.header .logo a {
+    color: #fff;
+}
+
+.header .logo a:hover {
+    text-decoration: none;
+}
+
+.header .main-nav .navbar-collapse {
+    padding: 0;
+}
+
+.header .main-nav .navbar-toggler {
+    margin-right: 0;
+    margin-top: 0;
+    background: none;
+    float: right;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 8px;
+    right: 10px;
+    top: 10px;
+    background: #074f66;
+}
+
+.header .main-nav .navbar-toggler:focus {
+    outline: none;
+}
+
+.header .main-nav .navbar-toggler .icon-bar {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 22px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.header .main-nav .navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.header .main-nav .navbar-toggler:hover .icon-bar {
+    background-color: #fff;
+}
+
+.navbar .nav-item {
+    font-weight: bold;
+    /*margin-right: 30px;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .nav-item .nav-link:hover {
+    text-decoration: none;
+}
+
+#header .navbar-nav .nav-item .nav-link {
+    color: #155263;
+}
+
+#header.navbar-fixed-top .navbar-nav .nav-item .nav-link {
+    color: #CFCFCF;
+}
+
+#header.navbar-fixed-top .navbar-nav .nav-item .nav-link.active {
+    color: #fff;
+    background: none;
+}
+
+
+
+.header .main-nav .nav .nav-item .nav-link:hover {
+    color: #074f66;
+    background: none;
+}
+
+.header .main-nav .nav .nav-item .nav-link:focus {
+    outline: none;
+    background: none;
+}
+
+.header .main-nav .nav .nav-item .nav-link:active {
+    outline: none;
+    background: none;
+}
+
+.navbar .nav-item.last {
+    margin-right: 0;
+}
