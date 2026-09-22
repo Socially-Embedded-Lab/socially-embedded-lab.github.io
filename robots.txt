@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sel.cis.bgu.ac.il/sitemap.xml
